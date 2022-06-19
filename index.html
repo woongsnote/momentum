@@ -24,23 +24,24 @@
  
     <form id="login-form" class="hidden">
         <div class="flex-box">
-            <input required maxlength="15" type="text" placeholder="What is your name?" class="inputName" />
+            <label for="nameInput" class="label">Write your name to Login</label>
+
+            <input required maxlength="10" type="text" id="nameInput" />
             <input type="submit" value="Log In" id="loginBtn" />
         </div>
-            
     </form>
         
     <h1 id="greeting" class="hidden"></h1>
 
-    
-    
     <form id="todo-form" class="hidden">
-            <input type="text" placeholder="Write a To Do and Press Enter" required />
+        <div class="flex-box">
+            <label for="todoInput" class="label">Write a To Do and Press Enter</label>
+            <input type="text" required id="todoInput"/>
+        </div>
     </form>
     
     <ul id="todo-list"></ul>
 
-    
     <div id="quote">
         <span></span>
         <span></span>

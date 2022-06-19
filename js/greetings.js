@@ -16,12 +16,15 @@ if (savedUsername === null) {
   paintGreetings(savedUsername);
 }
 
+
 function onLoginSubmit(event) {
   event.preventDefault();
   loginForm.classList.add(HIDDEN_CLASS);
   const username = loginInput.value;
   localStorage.setItem(USERNAME_KEY, username);
+  window.location.reload();
   paintGreetings(username);
+  
 }
 
 function paintGreetings(username) {

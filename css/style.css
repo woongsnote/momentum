@@ -14,14 +14,27 @@ input[type=text]{
   width: 500px;
   height: 50px;
   border: 0;
-  
+  border-bottom: 2px solid #fff;
   outline: none;
-  
+  background-color: transparent;
   font-size: 16px;
-  border-radius: 15px;
+  /* border-radius: 15px; */
   padding-left: 16px;
   margin: 16px;
 
+}
+.label{
+  margin: 10px auto;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+input[type=submit]:hover{
+  cursor: pointer;
+}
+
+#nameInput{
+  width: 300px;
 }
 
 .flex-box{
@@ -63,17 +76,19 @@ input[type=text]{
 }
 
 #clock{
-  font-size: 100px;
+  font-size: 72px;
   color: white;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 48px;
 }
 
 #greeting{
   color: white;
-  font-size: 64px;
+  font-size: 88px;
+  margin: 0px;
 }
 
 #weather{
@@ -88,7 +103,7 @@ input[type=text]{
   color: white;
 }
 
-
-ul{
+#todo-list{
+  height: 200px;
   color: white;
 }

@@ -6,6 +6,8 @@ const TODO_KEY = "todoList";
 
 let toDos = [];
 
+if(savedUsername !== null) todoForm.classList.toggle(HIDDEN_CLASS);
+
 function saveToDos() {
   localStorage.setItem(TODO_KEY, JSON.stringify(toDos));
 }
@@ -25,6 +27,7 @@ function paintToDo(newTodo) {
   const button = document.createElement("button");
   button.innerText = "❌";
   button.addEventListener("click", deleteTodo);
+
   li.appendChild(span);
   li.appendChild(button);
 
@@ -40,10 +43,12 @@ function handleTodoSubmit(event) {
     text: newTodo,
     id: Date.now(),
   };
-
+  if(toDos.length > 4){
+    alert("Can't add any more!Do Something and remove it!");
+  }else{
   toDos.push(newToDoObj);
   paintToDo(newToDoObj);
-  saveToDos();
+  saveToDos();}
 }
 
 todoForm.addEventListener("submit", handleTodoSubmit);
@@ -56,9 +61,3 @@ if (savedTodoList !== null) {
   toDos.forEach(paintToDo);
 }
 
-const getUser = localStorage.getItem(USERNAME_KEY);
-
-if(getUser != null){
-  console.log("user:", getUser);
-  todoForm.classList.remove(HIDDEN_CLASS);
-}
