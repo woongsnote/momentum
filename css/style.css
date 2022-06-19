@@ -1,0 +1,94 @@
+.hidden {
+  display: none;
+}
+
+.wrap{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+input[type=text]{
+  width: 500px;
+  height: 50px;
+  border: 0;
+  
+  outline: none;
+  
+  font-size: 16px;
+  border-radius: 15px;
+  padding-left: 16px;
+  margin: 16px;
+
+}
+
+.flex-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#loginBtn{
+  width: 100px;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  outline: none;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px;
+}
+
+#quote {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  align-items: center;
+  color: white;
+  font-size: 24px ;
+  margin-bottom: 16px;
+}
+
+.clockContainer{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#clock{
+  font-size: 100px;
+  color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#greeting{
+  color: white;
+  font-size: 64px;
+}
+
+#weather{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin-top: 20px;
+  margin-right: 20px;
+  color: white;
+}
+
+
+ul{
+  color: white;
+}
